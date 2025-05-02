@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <title>الدفع عبر PayPal</title>
+    <script defer src="https://www.paypal.com/sdk/js?client-id=Aa3-Y8xQcMhJdNTpBbnEB6CwkXGECyvXoF9HCw9rpnMZLd8lEMtFd0LonMLPR-yG4rMZ13-fSfh0zx8W&currency=USD&locale=ar"></script>
+</head>
+<body style="direction: rtl; font-family: sans-serif;">
+<h1>الدفع عبر PayPal</h1>
+<p><strong>سعر الكتاب: </strong><span id="price"></span></p>
+<div id="paypal-button-container"></div>
+
+<script>
+    const totalAmount = 10.00;
+    const bookId = 123;
+    document.getElementById('price').innerText = totalAmount.toFixed(2) + " $";
+
+    window.onload = function () {
+        paypal.Buttons({
+            createOrder: function (data, actions) {
+                return actions.order.create({
+                    purchase_units: [{
+                        amount: {
+                            value: totalAmount.toFixed(2)
+                        }
+                    }]
+                });
+            },
+            onApprove: function (data, actions) {
+                return actions.order.capture().then(function (details) {
+                    alert('تمت العملية بواسطة: ' + details.payer.name.given_name);
+                });
+            },
+            onCancel: function () {
+                alert('تم إلغاء العملية.');
+            }
+        }).render('#paypal-button-container');
+    };
+</script>
+</body>
+</html>
