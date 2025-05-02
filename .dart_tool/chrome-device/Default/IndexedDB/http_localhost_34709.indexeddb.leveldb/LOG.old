@@ -1,0 +1,24 @@
+2025/04/27-18:14:21.634 a4cb Reusing MANIFEST /tmp/flutter_tools.NLIVKO/flutter_tools_chrome_device.TSACVI/Default/IndexedDB/http_localhost_34709.indexeddb.leveldb/MANIFEST-000001
+2025/04/27-18:14:21.634 a4cb Recovering log #130
+2025/04/27-18:14:21.634 a4cb Reusing old log /tmp/flutter_tools.NLIVKO/flutter_tools_chrome_device.TSACVI/Default/IndexedDB/http_localhost_34709.indexeddb.leveldb/000130.log 
+2025/04/27-18:14:21.647 a4cd Level-0 table #136: started
+2025/04/27-18:14:21.650 a4cd Level-0 table #136: 35693 bytes OK
+2025/04/27-18:14:21.654 a4cd Delete type=0 #130
+2025/04/27-18:14:21.654 a4cc Manual compaction at level-0 from '\x00+\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00,\x00\x00\x00' @ 0 : 0; will stop at (end)
+2025/04/27-18:14:22.084 a4cd Level-0 table #138: started
+2025/04/27-18:14:22.087 a4cd Level-0 table #138: 3249 bytes OK
+2025/04/27-18:14:22.091 a4cd Delete type=0 #135
+2025/04/27-18:14:22.091 a4cb Manual compaction at level-0 from '\x00,\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00-\x00\x00\x00' @ 0 : 0; will stop at '\x00,\x00\x00\x05' @ 20735 : 1
+2025/04/27-18:14:22.091 a4cb Compacting 1@0 + 1@1 files
+2025/04/27-18:14:22.094 a4cb Generated table #139@0: 568 keys, 11243 bytes
+2025/04/27-18:14:22.094 a4cb Compacted 1@0 + 1@1 files => 11243 bytes
+2025/04/27-18:14:22.098 a4cb compacted to: files[ 0 1 1 0 0 0 0 ]
+2025/04/27-18:14:22.098 a4cb Delete type=2 #138
+2025/04/27-18:14:22.098 a4cb Manual compaction at level-0 from '\x00,\x00\x00\x05' @ 20735 : 1 .. '\x00-\x00\x00\x00' @ 0 : 0; will stop at (end)
+2025/04/27-18:14:23.485 a4cc Compacting 1@1 + 1@2 files
+2025/04/27-18:14:23.489 a4cc Generated table #140@1: 636 keys, 27507 bytes
+2025/04/27-18:14:23.489 a4cc Compacted 1@1 + 1@2 files => 27507 bytes
+2025/04/27-18:14:23.493 a4cc compacted to: files[ 0 0 1 0 0 0 0 ]
+2025/04/27-18:14:23.493 a4cc Delete type=2 #139
+2025/04/27-18:14:23.493 a4cc Delete type=2 #136
+2025/04/27-18:14:23.493 a4cc Delete type=2 #133

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <base href="/">
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="A new Flutter project.">
+
+  <!-- iOS meta tags & icons -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="ass">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png">
+
+  <title>ass</title>
+  <link rel="manifest" href="manifest.json">
+
+  <!-- Preloader Styles -->
+  <style id="splash-screen-style">
+    html {
+      height: 100%;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100%;
+      background-color: #FFFFFF;
+      background-size: 100% 100%;
+      overflow: hidden;
+    }
+
+    /* New rule to always show scrollbar */
+    body {
+      overflow: scroll; /* Forces scrollbars to always be visible */
+      scrollbar-width: thin; /* Makes the scrollbar thinner */
+      scrollbar-color: #3498db #f0f0f0; /* Custom colors for the scrollbar */
+    }
+
+    /* Customize Webkit browsers' scrollbars */
+    ::-webkit-scrollbar {
+      width: 8px; /* Sets the width of the scrollbar */
+    }
+
+    ::-webkit-scrollbar-track {
+      background: #f0f0f0; /* Track color */
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background-color: #3498db; /* Scrollbar color */
+      border-radius: 4px;
+    }
+
+    .splash-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 9999;
+    }
+
+    .loading-spinner {
+      border: 8px solid #f3f3f3;
+      border-top: 8px solid #3498db;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      animation: spin 1s linear infinite;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    .center {
+      margin: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+    }
+
+    .contain {
+      display:block;
+      width:100%; height:100%;
+      object-fit: contain;
+    }
+
+    .stretch {
+      display:block;
+      width:100%; height:100%;
+    }
+
+    .cover {
+      display:block;
+      width:100%; height:100%;
+      object-fit: cover;
+    }
+
+    .bottom {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      -ms-transform: translate(-50%, 0);
+      transform: translate(-50%, 0);
+    }
+
+    .bottomLeft {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+
+    .bottomRight {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+  </style>
+
+  <script id="splash-screen-script">
+    function removeSplashFromWeb() {
+      document.getElementById("splash")?.remove();
+      document.getElementById("splash-branding")?.remove();
+      document.body.style.background = "transparent";
+      document.body.style.overflow = "auto";
+    }
+
+    // Call remove splash once the Flutter runtime is ready
+    window.addEventListener('load', function() {
+      setTimeout(removeSplashFromWeb, 3000); // Adjust the timeout based on your preference
+    });
+  </script>
+
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+</head>
+
+<body>
+<!-- Pre-Loader Section -->
+<div id="splash" class="splash-container">
+  <div class="loading-spinner"></div>
+</div>
+
+<!-- Flutter Web App Initialization -->
+<script src="flutter_bootstrap.js" async=""></script>
+</body>
+
+</html>
