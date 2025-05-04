@@ -165,7 +165,7 @@ class _LandOnboardingScreenState extends State<LandOnboardingScreen>
         Navigator.pop(context); // Close loading dialog
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
-            content: Text('Please enter valid info'),
+            content: Text('الرجاء التأكد من المعلومات, تحقق من أنك لم تضع احرفا بدلا من الارقام'),
             backgroundColor: Colors.red,
           ),
         );
@@ -176,7 +176,7 @@ class _LandOnboardingScreenState extends State<LandOnboardingScreen>
       if (currentUser == null) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
-            content: Text('User not authenticated'),
+            content: Text('المستخدم ليس مسجلا'),
             backgroundColor: Colors.red,
           ),
         );

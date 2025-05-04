@@ -43,7 +43,7 @@ Future<void> main() async {
   const savedLanguage = 'ar';
   var initialRoute;
   if(FirebaseAuthService().getCurrentUser() !=null ){
-    initialRoute = '/profile';
+    initialRoute = '/profile_screen';
   }
   else{
     initialRoute = '/login';

@@ -81,7 +81,7 @@ class UserListedEstatesNotifier extends StateNotifier<AsyncValue<List<dynamic>>>
   dynamic _parseEstate(String type, Map<String, dynamic> data) {
     switch (type) {
       case 'apartment':
-        return House.fromMap(data);
+        return Apartment.fromMap(data);
       case 'villa':
         return Villa.fromMap(data);
       case 'house':

@@ -56,7 +56,7 @@ class SavedEstatesNotifier extends StateNotifier<AsyncValue<List<dynamic>>> {
           final data = doc.data() as Map<String, dynamic>;
           switch (type) {
             case 'apartment':
-              estates.add(House.fromMap(data));
+              estates.add(Apartment.fromMap(data));
               break;
             case 'villa':
               estates.add(Villa.fromMap(data));
@@ -147,7 +147,7 @@ class SavedEstatesNotifier extends StateNotifier<AsyncValue<List<dynamic>>> {
 
           switch (estateType) {
             case 'apartment':
-              newEstate = House.fromMap(data);
+              newEstate = Apartment.fromMap(data);
               break;
             case 'villa':
               newEstate = Villa.fromMap(data);
