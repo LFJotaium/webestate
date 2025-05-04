@@ -3,7 +3,7 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 
-const RESOURCES = {"main.dart.js": "27d948fedbe7d996e68f3497dec18eb9",
+const RESOURCES = {"main.dart.js": "9aede0408e6365a46cb980f871174ebc",
 "canvaskit/skwasm.wasm": "f0dfd99007f989368db17c9abeed5a49",
 "canvaskit/skwasm_st.js.symbols": "c7e7aac7cd8b612defd62b43e3050bdd",
 "canvaskit/skwasm_st.wasm": "56c3973560dfcbf28ce47cebe40f3206",
@@ -16,7 +16,7 @@ const RESOURCES = {"main.dart.js": "27d948fedbe7d996e68f3497dec18eb9",
 "canvaskit/skwasm_st.js": "d1326ceef381ad382ab492ba5d96f04d",
 "canvaskit/canvaskit.js.symbols": "68eb703b9a609baef8ee0e413b442f33",
 "canvaskit/canvaskit.js": "86e461cf471c1640fd2b461ece4589df",
-"flutter_bootstrap.js": "3a74b3c7e22e15efa276a92e6538febe",
+"flutter_bootstrap.js": "fbdaeaef93de1625c4578a0e20894c1f",
 "assets/shaders/ink_sparkle.frag": "ecc85a2e95f5e9f53123dcaf8cb9b6ce",
 "assets/AssetManifest.json": "fce0c8c90cf4350873442163b4b14bbe",
 "assets/images/AppBarImage.jpg": "680f7bb83eb6ffc3c8708c5ca533a557",
